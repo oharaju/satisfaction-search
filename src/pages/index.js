@@ -8,6 +8,7 @@ export default function Home() {
       className={`flex min-h-screen flex-col items-center justify-between p-24 ${inter.className}`}>
       <div>
         <button class="btn-main">Teste Vercel</button>
+        <button class="btn-main">Teste Vercel 2</button>
       </div>
     </main>
   )
