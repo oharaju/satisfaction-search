@@ -17,19 +17,6 @@
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: rgb(99, 96, 96);
 }
 
-.btn-main {
-  background-color: #C8023F;
-  color: #fff;
-  padding: 10px 14px;
-  border-radius: 5px;
-  margin-right: 10px;
-}

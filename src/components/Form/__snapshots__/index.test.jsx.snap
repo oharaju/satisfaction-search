@@ -1,0 +1,175 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`get json and display it on screen correctly 1`] = `
+<div>
+  <p>
+    Também é importante ter um espaço para o dono da loja colocar uma descrição da pergunta para ajudar o entendimento do usuário
+  </p>
+  <div>
+    <button>
+      star1
+    </button>
+    <button>
+      star2
+    </button>
+    <button>
+      star3
+    </button>
+    <button>
+      star4
+    </button>
+    <button>
+      star5
+    </button>
+    <input
+      type="text"
+      value={5}
+    />
+  </div>
+  <br />
+  <br />
+  <p>
+    Também é importante ter um espaço para o dono da loja colocar uma descrição da pergunta para ajudar o entendimento do usuário
+  </p>
+  <br />
+  <br />
+  <p>
+    Descreva o motivo de sua avaliação
+  </p>
+  <textarea
+    type="text"
+  />
+  <br />
+  <br />
+  <p>
+    Qual loja você frequenta?
+  </p>
+  <select
+    name="select"
+  >
+    <option
+      selected={true}
+    >
+      Qual loja você frequenta?
+    </option>
+    <option
+      value="valor3"
+    >
+      Valor 3
+    </option>
+    <option
+      value="valor3"
+    >
+      Valor 3
+    </option>
+    <option
+      value="valor3"
+    >
+      Valor 3
+    </option>
+  </select>
+  <br />
+  <br />
+  <p>
+    Pergunta de escolha única?
+  </p>
+  <div>
+    <input
+      name="fav_language"
+      type="radio"
+      value={0}
+    />
+    <label>
+      Sim
+    </label>
+    <input
+      name="fav_language"
+      type="radio"
+      value={1}
+    />
+    <label>
+      Não
+    </label>
+  </div>
+  <br />
+  <br />
+  <p>
+    Pergunta de múltipla escolha?
+  </p>
+  <div>
+    <input
+      name="fav_languagecheckbox"
+      type="checkbox"
+      value={0}
+    />
+    <label>
+      Opção 1
+    </label>
+    <input
+      name="fav_languagecheckbox"
+      type="checkbox"
+      value={1}
+    />
+    <label>
+      Opção 2
+    </label>
+    <input
+      name="fav_languagecheckbox"
+      type="checkbox"
+      value={2}
+    />
+    <label>
+      Opção 3
+    </label>
+    <input
+      name="fav_languagecheckbox"
+      type="checkbox"
+      value={3}
+    />
+    <label>
+      Opção 4
+    </label>
+  </div>
+  <br />
+  <br />
+  <p>
+    Pergunta de múltipla escolha?
+  </p>
+  <div>
+    <input
+      name="fav_languagecheckbox"
+      type="checkbox"
+      value={0}
+    />
+    <label>
+      Opção 1
+    </label>
+    <input
+      name="fav_languagecheckbox"
+      type="checkbox"
+      value={1}
+    />
+    <label>
+      Opção 2
+    </label>
+    <input
+      name="fav_languagecheckbox"
+      type="checkbox"
+      value={2}
+    />
+    <label>
+      Opção 3
+    </label>
+  </div>
+  <br />
+  <br />
+  <p>
+    Pergunta de texto?
+  </p>
+  <textarea
+    type="text"
+  />
+  <br />
+  <br />
+</div>
+`;
