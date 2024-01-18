@@ -1,10 +1,10 @@
 import renderer from 'react-test-renderer';
 import React from 'react';
-import Button from './index';
+import Form from './index';
 
-it('renders correctly', () => {
+it('get json and display it on screen correctly', () => {
   const tree = renderer
-    .create(<Button/>)
+    .create(<Form/>)
     .toJSON();
   expect(tree).toMatchSnapshot();
 });

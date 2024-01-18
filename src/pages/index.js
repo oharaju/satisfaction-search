@@ -1,12 +1,9 @@
-import { Inter } from 'next/font/google';
-import Button from '@/components/Button/index';
-
-const inter = Inter({ subsets: ['latin'] })
+import Form from '@/components/Form/index';
 
 export default function Home() {
   return (
     <>
-      <Button/>
+      <Form />
     </>
   )
 }

@@ -6,10 +6,10 @@ module.exports = {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
   ],
   theme: {
+    fontFamilly:  {
+      sans: ['var(--font-poppins)']
+    },
     extend: {
-      fontFamilly:  {
-        sans: ['var(--font-poppins)']
-      },
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
