@@ -1,4 +1,10 @@
 import React from 'react';
+import Content from '@/components/Content';
+import TextArea from '@/components/TextArea';
+import Radio from '@/components/Radio';
+import Select from '@/components/Select';
+import Checkbox from '@/components/Checkbox';
+import StarReview from '@/components/StarReview';
 
 const json = {
   "itens":[
@@ -109,70 +115,20 @@ const json = {
   "warning":""
 }
 
-const Content = ({children}) => (
-  <p>{children}</p>
-)
-
-const TextArea = () => (
-  <textarea type="text"></textarea>
-)
-
-const Stars = ({answerValue}) => (
-  <div>
-    <button>star1</button>
-    <button>star2</button>
-    <button>star3</button>
-    <button>star4</button>
-    <button>star5</button>
-    <input type="text" value={answerValue} />
-  </div>
-)
-
-const Radio = ({itens}) => (
-  <div>
-    {itens.map(({value, description}) => (
-      <>
-        <input type="radio"  name="fav_language" value={value} />
-        <label>{description}</label>
-      </>
-    ))}
-  </div>
-)
-
-const Checkbox = ({itens}) => (
-  <div>
-    {itens.map(({value, description}) => (
-      <>
-        <input type="checkbox"  name="fav_languagecheckbox" value={value} />
-        <label>{description}</label>
-      </>
-    ))}
-  </div>
-)
-
-const Select = ({content, itens}) => (
-  <select name="select">
-    <option selected>{content}</option>
-    {itens.map(() => (
-      <option value="valor3">Valor 3</option>
-    ))}
-  </select>
-)
-
 export default function Form() {
   return(
     <div>
-      {json.itens.map(({typeQuestion, content,...rest}) => {
+      {json.itens.map(({typeQuestion, content,...rest}, index) => {
         return (
-          <>
+          <div key={index}>
             {content && <Content>{content}</Content>}
-            {typeQuestion === 1 && <Stars {...rest} />}
-            {typeQuestion === 3 && <TextArea />}
-            {typeQuestion === 4 && <Select content={content} {...rest} />}
-            {typeQuestion === 5 && <Radio {...rest} />}
-            {typeQuestion === 6 && <Checkbox {...rest} />}
+            {typeQuestion === 1 && <StarReview {...rest} key={index} />}
+            {typeQuestion === 3 && <TextArea key={index} />}
+            {typeQuestion === 4 && <Select content={content} {...rest} key={index} />}
+            {typeQuestion === 5 && <Radio {...rest} key={index} />}
+            {typeQuestion === 6 && <Checkbox {...rest} key={index} />}
             <br/><br/>
-          </>
+          </div>
         )
       })}
     </div>
