@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Content from '@/components/Content';
 import TextArea from '@/components/TextArea';
 import Radio from '@/components/Radio';
@@ -115,14 +115,28 @@ const json = {
   "warning":""
 }
 
+const itemsStars= [... new Array(5).keys()];
+
 export default function Form() {
+
+  const [activeStar, setActiveStar] = useState();
+
+  const onClickStar = (index) => {
+    setActiveStar((oldState) => (oldState === index ? undefined : index));
+  }
+
   return(
     <div>
       {json.itens.map(({typeQuestion, content,...rest}, index) => {
         return (
           <div key={index}>
             {content && <Content>{content}</Content>}
-            {typeQuestion === 1 && <StarReview {...rest} key={index} />}
+
+            {typeQuestion === 1 && 
+              itemsStars.map((index) => (
+                <StarReview {...rest} key={index} isActive={index <= activeStar} onClick={() => onClickStar(index)} />)
+            )}
+
             {typeQuestion === 3 && <TextArea key={index} />}
             {typeQuestion === 4 && <Select content={content} {...rest} key={index} />}
             {typeQuestion === 5 && <Radio {...rest} key={index} />}
