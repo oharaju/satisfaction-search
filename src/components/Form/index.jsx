@@ -126,7 +126,7 @@ export default function Form() {
   }
 
   return(
-    <div>
+    <div className='bg-white p-8 h-full max-h-lvh'>
       {json.itens.map(({typeQuestion, content,...rest}, index) => {
         return (
           <div key={index}>

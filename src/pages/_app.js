@@ -10,7 +10,7 @@ const poppins = Poppins({
 
 export default function App({ Component, pageProps }) {
   return(
-    <main className={`${poppins.className}`}>
+    <main className={`${poppins.className} bg-hero h-100 bg-cover bg-center h-screen flex justify-center`}>
       <Component {...pageProps} />
     </main>
   )
